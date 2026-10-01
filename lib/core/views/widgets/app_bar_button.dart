@@ -37,7 +37,7 @@ class AppBarButton extends StatelessWidget {
         customBorder: const CircleBorder(),
         child: Padding(
           padding: const EdgeInsets.all(11),
-          child: Icon(iconData, color: effectiveIconColor, size: 28),
+          child: Icon(iconData, color: effectiveIconColor, size: 30),
         ),
       ),
     );
@@ -45,7 +45,7 @@ class AppBarButton extends StatelessWidget {
     if (isTransparent) {
       return ClipOval(
         child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 6, sigmaY: 6),
+          filter: ImageFilter.blur(sigmaX: 25, sigmaY: 25),
           child: buttonContent,
         ),
       );
